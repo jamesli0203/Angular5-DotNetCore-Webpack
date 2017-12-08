@@ -17,14 +17,6 @@
 - Testing server usign _xUnit_
 - _Yarn_ & _npm 5_
 
-## Authors
-<img src="https://avatars.githubusercontent.com/u/11268349?v=3" width="70" alt="Fabian Gosebrink"><img src="https://avatars.githubusercontent.com/u/3442158?v=3" width="70" alt="Damien Bowden"><img src="https://pbs.twimg.com/profile_images/707847627992338432/ytT_FxUY_400x400.jpg" width="70" alt="Roberto Simonetti">
-
-_[Fabian Gosebrink](https://twitter.com/FabianGosebrink), [Damien Bowden](https://twitter.com/damien_bod), [Roberto Simonetti](https://twitter.com/robisim74)_
-
-Blogs:
-- [damienbod.com](https://damienbod.com/2016/06/12/asp-net-core-angular2-with-webpack-and-visual-studio/)
-- [offering.solutions](http://offering.solutions//blog/articles/2016/06/12/asp-net-core-angular-2-webpack-visual-studio/)
 
 ## Table of contents
 * [Project structure](#1)
