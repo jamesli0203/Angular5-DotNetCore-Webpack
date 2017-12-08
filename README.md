@@ -1,9 +1,4 @@
-# Angular Visual Studio Webpack Starter
-[![Build status](https://ci.appveyor.com/api/projects/status/3x6y01a8312x6o2p?svg=true)](https://ci.appveyor.com/project/damienbod/angular2webpackvisualstudio)
 
->Template for [Webpack](https://webpack.js.org/concepts/), [Visual Studio](https://www.visualstudio.com/), [ASP.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) and [Angular](https://angular.io/). Both the client and the server side of the application are implemented inside one ASP.NET Core project which makes it easier to deploy.
-
-![vs_webpack_angular2](https://damienbod.files.wordpress.com/2016/06/vs_webpack_angular2.png?w=600)
 
 ## Features
 - Angular [AoT compilation](https://angular.io/guide/aot-compiler)
@@ -17,50 +12,6 @@
 - Testing server usign _xUnit_
 - _Yarn_ & _npm 5_
 
-
-## Table of contents
-* [Project structure](#1)
-* [Installing](#2)
-* [Running](#3)
-	* [Commands](#3.1)
-	* [Development](#3.2)
-	* [Production](#3.3)
-* [Testing](#4)
-* [Dotnet Template](#5)
-* [Notes](#6)
-* [Links](#7)
-
-## <a name="1"></a>Project structure
-- **src**
-	- **AngularWebpackVisualStudio** _ASP.NET Core Web API project_
-		- **.template.config** _Folder containing the template information about the dotnet new template_
-		- **wwwroot** _Root for Angular application deployment_
-		- **angularApp** _Angular application_
-			- **main.ts** _Entry point for JiT compilation_
-			- **main-aot.ts** _Entry point for AoT compilation_
-			- **tests** _Client tests_
-		- **config** _Folder for configuration files_
-			- **webpack.dev.js** _webpack configuration file for development_
-			- **webpack.prod.js** _webpack configuration file for production_
-			- **webpack.test.js** _webpack configuration file for testing_
-			- **spec.bundle.js** _Used for client testing_
-		- **Controllers** _Folder for API controllers_
-		- **Models** _Folder for models_
-		- **Startup.cs** _Web API configuration_
-		- **package.json** _Packages for Angular app_
-		- **karma.conf.js** _Karma configuration for client testing_
-		- **tsconfig.json** & **tsconfig-aot.json** _TypeScript & ngc compiler options_
-		- **webpack.config.js** _Webpack configuration file for development & production of Angular app_
-- **tests**
-	- **AngularWebpackVisualStudio_Tests** _API tests_	
-
-## <a name="2"></a>Installing
-Requirements:
-- At least [.NET Core 2.0.0](https://www.microsoft.com/net/download/core)
-- At least _node 6.9_ and _npm 4_
-
-#### Yarn
-You can use this template also with [yarn](https://yarnpkg.com/en/docs/install).
 
 #### Visual Studio
 The installed _nodejs_ on your system needs to be used inside Visual Studio and not the _nodejs_ from Visual Studio. You need to set the path of your node before the VS node.
