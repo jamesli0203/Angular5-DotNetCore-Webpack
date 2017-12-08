@@ -1,0 +1,105 @@
+﻿<div class="container-fluid">
+
+    <h1>{{message}}</h1>
+    
+    <!--<div class="row" *ngIf="!isSignUp">
+        <form class="form-inline" (ngSubmit)="addThing()" #thingForm="ngForm">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputThing">Thing</label>
+                <input type="text" class="form-control" id="exampleInputThing" placeholder="Name of the thing ..." name="thing" [(ngModel)]="user.name"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!thingForm.valid">Sign Up</button>
+        </form>
+    </div>-->
+
+    <!--<div class="row" *ngIf="things.length > 0 && isSignUp">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th class="text-right"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let thing of things; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{thing.name}}</td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-xs btn-danger" (click)="deleteThing(thing)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>-->
+    <div  *ngIf="!isSignUp">
+        <form (ngSubmit)="addUser()" #thingForm="ngForm">
+            <div class="form-group">
+                <label for="firstname">First Name : </label>
+                <input type="text" class="form-control" id="firtname" placeholder="First name..." name="firtname" [(ngModel)]="user.firstname"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name :</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name ..." name="lastname" [(ngModel)]="user.lastname"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="emailaddress">Email: </label>
+                <input type="text" class="form-control" id="emailaddress" placeholder="Email Address ..." name="emailaddress" [(ngModel)]="user.emailaddress"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="activity">Activity</label>
+                <input type="text" class="form-control" id="activity" placeholder="Activity ..." name="activity" [(ngModel)]="user.activity"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="comments">User</label>
+                <textarea type="text" class="form-control" id="comments" placeholder="Comments ..." name="comments" [(ngModel)]="user.comments"
+                          required> </textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" [disabled]="!thingForm.valid">Sign Up</button>
+            </div>
+</form>
+    </div>
+    <div class="row" *ngIf="users.length > 0 && isSignUp">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Activity</th>
+                        <th>Comments</th>
+                        <th class="text-right"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let u of users; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{u.firstname}}</td>
+                        <td>{{u.lastname}}</td>
+                        <td>{{u.emailaddress}}</td>
+                        <td>{{u.activity}}</td>
+                        <td>{{u.comments}}</td>
+                        <!--<td class="text-right">
+                            <button type="button" class="btn btn-xs btn-danger" (click)="deleteThing(thing)">Delete</button>
+                        </td>-->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row" *ngIf="users.length <= 0">
+        <span>No items found</span>
+    </div>
+    <!--<p-calendar [(ngModel)]="value"></p-calendar>-->
+</div>
